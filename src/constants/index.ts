@@ -74,6 +74,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.BSCTESTNET]: [
     [CAKE, WBNB],
+    [WBNB, BUSD],
     // [BUSD, USDT],
     // [DAI, USDT],
   ],

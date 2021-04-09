@@ -39,6 +39,8 @@ export default function Pool() {
     liquidityTokens
   )
 
+  console.log(liquidityTokens)
+
   // fetch the reserves for all V2 pools in which the user has a balance
   const liquidityTokensWithBalances = useMemo(
     () =>
