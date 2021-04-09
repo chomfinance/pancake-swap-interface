@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
+import { CAKE } from '../constants'
 
 type ApiResponse = {
   updated_at: string
@@ -22,6 +23,11 @@ const useGetPriceData = () => {
       try {
         const response = await fetch(api)
         const res: ApiResponse = await response.json()
+
+        // Hardcode to make it work in testnet
+        res.data[CAKE.address] = res.data["0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"];
+
+        console.log(res.data)
 
         setData(res)
       } catch (error) {
