@@ -2681,7 +2681,7 @@
 
 "@pancakeswap-libs/sdk@github:chomfinance/pancakeswap-sdk#bsc/testnet":
   version "1.0.1"
-  resolved "https://codeload.github.com/chomfinance/pancakeswap-sdk/tar.gz/191aacdc34302553b23025920f86ec673a24d602"
+  resolved "https://codeload.github.com/chomfinance/pancakeswap-sdk/tar.gz/b30aaee615ff73302d53fe63c94f94d132eaf65d"
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"
