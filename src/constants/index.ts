@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0x798aac1691577d41169Fd42C4C2dF5d3D49f7522'
+export const ROUTER_ADDRESS = '0x8972d0ed29c216557c1dA8c6d6907196e98B92ad'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -8,7 +8,7 @@ type ChainTokenList = {
 }
 
 export const CAKE = new Token(ChainId.BSCTESTNET, '0x1b66b84545F80a6515931f7D5431c24c95239b03', 18, 'EOB', 'EOB Token')
-export const WBNB = new Token(ChainId.BSCTESTNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
+export const WBNB = new Token(ChainId.BSCTESTNET, '0x094616f0bdfb0b526bd735bf66eca0ad254ca81f', 18, 'WBNB', 'Wrapped BNB')
 // export const DAI = new Token(ChainId.BSCTESTNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
 // export const BTCB = new Token(ChainId.BSCTESTNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')

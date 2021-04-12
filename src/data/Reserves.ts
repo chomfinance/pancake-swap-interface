@@ -1,3 +1,4 @@
+import { pairGetAddress } from 'utils/pairGetAddress'
 import { TokenAmount, Pair, Currency } from '@pancakeswap-libs/sdk'
 import { useMemo } from 'react'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
@@ -31,7 +32,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
-        return tokenA && tokenB && !tokenA.equals(tokenB) ? Pair.getAddress(tokenA, tokenB) : undefined
+        return tokenA && tokenB && !tokenA.equals(tokenB) ? pairGetAddress(tokenA, tokenB) : undefined
       }),
     [tokens]
   )
